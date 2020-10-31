@@ -237,105 +237,117 @@ const StyledProject = styled.div`
 const Projects = () => {
 
 
-    const featuredProjects = [
-        {
-            title: 'One Stop Store',
-            tech: [
-                "Django",
-                "jQuery",
-                "HTML & CSS"
-            ],
-            cover: 'https://s3.amazonaws.com/poly-screenshots.angel.co/Project/1e/1192401/42abbf790b22cbfce64cc31b695b51e8-original.gif',
-            github: 'https://github.com/MohitMaheshwari1711/ecommerce',
-            external: 'https://onestop-store.herokuapp.com/',
-            description: "It's a fashion e-commerce site developed using Django, j Query, HTML and CSS. It has almost all the major functionalities of a modern eCommerce website including credit and debit card payments using stripe."
-        },
-        {
-            title: 'One Stop Store',
-            tech: [
-                "React JS",
-                "Node JS",
-                "Express",
-                "Mongodb",
-                "S3",
-            ],
-            cover: 'https://s3.amazonaws.com/poly-screenshots.angel.co/Project/5c/1083512/84aaaf17049e41800b9fe5bf4160b84a-original.png',
-            github: 'https://github.com/MohitMaheshwari1711/Book-your-stay',
-            external: 'https://book-your-stay.herokuapp.com/',
-            description: "Airbnb Clone is a web based application to book your stay like Airbnb. The tech stack used in this project is React JS on the client side and Node JS on the server side. Mongodb is used for data storage and Amazon S3 for image storage"
-        },
-        {
-            title: 'Github Finder',
-            tech: [
-                "JavaScript (ES6+)",
-                "Bootstrap",
-                "HTML & CSS"
-            ],
-            cover: 'https://s3.amazonaws.com/poly-screenshots.angel.co/Project/34/1083539/be340e8031e4798864d66c86eb5774cf-original.png',
-            github: 'https://github.com/MohitMaheshwari1711/Github_Finder',
-            external: 'https://mohitmaheshwari1711.github.io/Github_Finder/',
-            description: "It's a JavaScript project that gives a list of github repos as per the username. The total number of repositories per user is limited to 5 only. It was more part of my initital learning of javaScript"
-        }
-    ];
+  const featuredProjects = [
+    {
+      title: 'Covid-19 Tracker',
+      tech: [
+        "React JS",
+        "React Material UI",
+        "HTML & CSS"
+      ],
+      cover: 'https://s3.amazonaws.com/poly-screenshots.angel.co/Project/4a/1223332/f72c421063e868e10ea508f106908b44-original.png',
+      github: 'https://github.com/MohitMaheshwari1711/covid-tracker',
+      external: 'https://covid-stat-tracker.netlify.app/',
+      description: "It's a simple site that displays data related to COVID-19 cases based on country selection along with graphs and map. The data fetched are total cases, recoveries and deaths."
+    },
+    {
+      title: 'One Stop Store',
+      tech: [
+        "Django",
+        "jQuery",
+        "HTML & CSS"
+      ],
+      cover: 'https://s3.amazonaws.com/poly-screenshots.angel.co/Project/1e/1192401/42abbf790b22cbfce64cc31b695b51e8-original.gif',
+      github: 'https://github.com/MohitMaheshwari1711/ecommerce',
+      external: 'https://onestop-store.herokuapp.com/',
+      description: "It's a fashion e-commerce site developed using Django, j Query, HTML and CSS. It has almost all the major functionalities of a modern eCommerce website including credit and debit card payments using stripe."
+    },
+    {
+      title: 'One Stop Store',
+      tech: [
+        "React JS",
+        "Node JS",
+        "Express",
+        "Mongodb",
+        "S3",
+      ],
+      cover: 'https://s3.amazonaws.com/poly-screenshots.angel.co/Project/5c/1083512/84aaaf17049e41800b9fe5bf4160b84a-original.png',
+      github: 'https://github.com/MohitMaheshwari1711/Book-your-stay',
+      external: 'https://book-your-stay.herokuapp.com/',
+      description: "Airbnb Clone is a web based application to book your stay like Airbnb. The tech stack used in this project is React JS on the client side and Node JS on the server side. Mongodb is used for data storage and Amazon S3 for image storage"
+    },
+    {
+      title: 'Github Finder',
+      tech: [
+        "JavaScript (ES6+)",
+        "Bootstrap",
+        "HTML & CSS"
+      ],
+      cover: 'https://s3.amazonaws.com/poly-screenshots.angel.co/Project/34/1083539/be340e8031e4798864d66c86eb5774cf-original.png',
+      github: 'https://github.com/MohitMaheshwari1711/Github_Finder',
+      external: 'https://mohitmaheshwari1711.github.io/Github_Finder/',
+      description: "It's a JavaScript project that gives a list of github repos as per the username. The total number of repositories per user is limited to 5 only. It was more part of my initital learning of javaScript"
+    }
+  ];
 
-    const revealTitle = useRef(null);
-    const revealProjects = useRef([]);
-    useEffect(() => {
-        sr.reveal(revealTitle.current, srConfig());
-        revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
-    }, []);
+  const revealTitle = useRef(null);
+  const revealProjects = useRef([]);
+  useEffect(() => {
+    sr.reveal(revealTitle.current, srConfig());
+    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+  }, []);
 
-    return (
-        <section id="projects">
-            <h2 className="numbered-heading" ref={revealTitle}>
-                Some Things I’ve Built
+  return (
+    <section id="projects">
+      <h2 className="numbered-heading" ref={revealTitle}>
+        Some Things I’ve Built
       </h2>
 
-            <div>
-                {featuredProjects &&
-                    featuredProjects.map((node, i) => {
-                        const { external, title, tech, github, cover, description } = node;
+      <div>
+        {featuredProjects &&
+          featuredProjects.map((node, i) => {
+            const { external, title, tech, github, cover, description } = node;
 
-                        return (
-                            <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
-                                <div className="project-content">
-                                    <p className="project-overline">Featured Project</p>
-                                    <h3 className="project-title">{title}</h3>
-                                    <div className="project-description">{description}</div>
+            return (
+              <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
+                <div className="project-content">
+                  <p className="project-overline">Featured Project</p>
+                  <h3 className="project-title">{title}</h3>
+                  <div className="project-description">{description}</div>
 
-                                    {tech && (
-                                        <ul className="project-tech-list">
-                                            {tech.map((tech, i) => (
-                                                <li key={i}>{tech}</li>
-                                            ))}
-                                        </ul>
-                                    )}
+                  {tech && (
+                    <ul className="project-tech-list">
+                      {tech.map((tech, i) => (
+                        <li key={i}>{tech}</li>
+                      ))}
+                    </ul>
+                  )}
 
-                                    <div className="project-links">
-                                        {github && (
-                                            <a href={github} aria-label="GitHub Link">
-                                                <IconGitHub />
-                                            </a>
-                                        )}
-                                        {external && (
-                                            <a href={external} aria-label="External Link">
-                                                <IconExternal />
-                                            </a>
-                                        )}
-                                    </div>
-                                </div>
+                  <div className="project-links">
+                    {github && (
+                      <a href={github} aria-label="GitHub Link">
+                        <IconGitHub />
+                      </a>
+                    )}
+                    {external && (
+                      <a href={external} aria-label="External Link">
+                        <IconExternal />
+                      </a>
+                    )}
+                  </div>
+                </div>
 
-                                <div className="project-image">
-                                    <a href={external ? external : github ? github : '#'}>
-                                        <img src={cover} alt={title} className="img" />
-                                    </a>
-                                </div>
-                            </StyledProject>
-                        );
-                    })}
-            </div>
-        </section>
-    );
+                <div className="project-image">
+                  <a href={external ? external : github ? github : '#'}>
+                    <img src={cover} alt={title} className="img" />
+                  </a>
+                </div>
+              </StyledProject>
+            );
+          })}
+      </div>
+    </section>
+  );
 };
 
 export default Projects;

@@ -184,7 +184,7 @@ const Nav = () => {
             {isMounted && (
               <CSSTransition classNames={fadeDownClass} timeout={timeout}>
                 <div style={{ transitionDelay: `${navLinks.length * 100}ms` }}>
-                  <a href={require('../assets/Resume_2020.pdf')} target="_blank"  rel="noopener noreferrer" className="resume-button">
+                  <a href={require('../assets/Resume_(Mohit Maheshwari).pdf')} target="_blank"  rel="noopener noreferrer" className="resume-button">
                     Resume
                   </a>
                 </div>

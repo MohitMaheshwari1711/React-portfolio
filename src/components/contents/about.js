@@ -139,7 +139,7 @@ const About = () => {
             <p>
               Shortly after graduating from{' '}
               <Link to="https://www.amity.edu/">Amity University</Link>, I joined the
-              engineering team at <Link to="https://www.thelattice.in/">Lattice Innovations</Link> where I work
+              engineering team at <Link to="https://1mg.com/">TATA 1mg</Link> where I work
               on a wide variety of interesting and meaningful projects on a daily basis.
             </p>
 

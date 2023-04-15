@@ -162,18 +162,17 @@ const Jobs = () => {
     {
       data: [
         {
-          title: "Software Development Engineer - I",
+          title: "Software Development Engineer - II",
           company: "TATA 1mg",
           location: "Gurugram",
           range: "June 2021 - Present",
           url: "https://www.1mg.com/",
           description: [
-            "Integrated 1mg with TATA Neu",
-            "Creating new features, functionality and capabilities for web apps using React JS on the client-side and Node JS for SSR",
-            "Converted the entire PWA application with async reducers approach bringing the app bundle size from 137kb to 50kb gzipped, increasing the code coverage and bringing down LFC by 1 second",
-            "Profiling, troubleshooting and bug fixes resulting in system performance and scalability improvements.",
-            "Worked on the enhancement of webview and in making them perform efficient even in poor network coverage",
-            "Actively involved in interviewing new candidates for the team"
+            "Converted the entire PWA application with async reducers approach, bringing the app bundle size from 137 Kb to 50 Kb gzipped, increasing the code coverage and bringing down LFC by 1 second.",
+            "Created a method similar to getServerSideProps in Next JS for 1mg PWA application to seamlessly render a page whose data must be fetched at request time.",
+            "Converted the entire monolithic architecture to mono-repo architecture with seamless integration of turborepo tool.",
+            "Conducted code reviews and provided feedback to team members.",
+            "Mentored junior developers and guided best practices and coding standards.",
           ],
         },
         {
@@ -183,9 +182,10 @@ const Jobs = () => {
           range: "Feb 2019 - May 2021",
           url: "https://www.thelattice.in/",
           description: [
-            "Creating new features, functionality and capabilities for web apps using Angular 6+ framework",
-            "Conducting requirements gathering and validation as a part of collaboration for the high-profile external web app that helps to address the client’s need through important UI/UX parts of the system before the active phase of development begins",
-            "Integrating with third-party services and external APIs and using complex libraries such as Socket.IO for showing data in real-time as a part of implementation amongst different projects and mitigating code duplicity",
+            "Creating new web app features, functionality, and capabilities using the Angular 2+ framework.",
+            "Conducting requirements gathering and validation as a part of a collaboration for the high-profile external web app that helps to address the client’s need through important UI/UX parts of the system before the active phase of development begins.",
+            "Integrating with third-party services and external APIs and using complex libraries such as Socket.IO for showing data in real-time as a part of implementation amongst different projects and mitigating code duplicity.",
+            "Profiling, troubleshooting and bug f ixes resulting in system performance and scalability improvements.",
           ],
         },
         {

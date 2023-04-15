@@ -186,7 +186,7 @@ const Menu = () => {
               </ol>
             )}
 
-            <a href={require('../assets/Resume_(Mohit Maheshwari).pdf')} target='_blank' rel="noopener noreferrer" className="resume-link">
+            <a href={require('../assets/Mohit Maheshwari (CV).pdf')} target='_blank' rel="noopener noreferrer" className="resume-link">
               Resume
             </a>
           </nav>

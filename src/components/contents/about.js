@@ -120,7 +120,7 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'Angular 6+', 'React', 'Node.js', 'Django'];
+  const skills = ['JavaScript (ES6+)', 'Angular 6+', 'React JS', 'Node Js', 'Express', 'Django'];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -129,7 +129,7 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>Hello! I'm Mohit Maheshwari, a software engineer based in New Delhi.</p>
+            <p>Hello! I'm Mohit Maheshwari, a software engineer based in Gurgaon.</p>
 
             <p>
               I enjoy creating things that live on the internet, whether that be websites,

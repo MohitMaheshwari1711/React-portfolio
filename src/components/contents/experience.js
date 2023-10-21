@@ -157,7 +157,7 @@ const StyledTabContent = styled.div`
 `;
 
 const Jobs = () => {
-  const company = ["TATA 1mg", "Lattice Innovations", "Yajna Ventures"];
+  const company = ["TATA 1mg", "Lattice Innovations"];
   const jobsData = [
     {
       data: [
@@ -168,11 +168,19 @@ const Jobs = () => {
           range: "June 2021 - Present",
           url: "https://www.1mg.com/",
           description: [
-            "Converted the entire PWA application with async reducers approach, bringing the app bundle size from 137 Kb to 50 Kb gzipped, increasing the code coverage and bringing down LFC by 1 second.",
-            "Created a method similar to getServerSideProps in Next JS for 1mg PWA application to seamlessly render a page whose data must be fetched at request time.",
-            "Converted the entire monolithic architecture to mono-repo architecture with seamless integration of turborepo tool.",
-            "Conducted code reviews and provided feedback to team members.",
-            "Mentored junior developers and guided best practices and coding standards.",
+            "Transformed the PWA application by adopting the async reducers approach, resulting in a remarkable reduction of the app bundle size from 137 Kb to a mere 50 Kb gzipped. This implementation led to a substantial boost in code coverage by almost 25% and decreased LFC by 1 second.",
+            'Created a method similar to "getServerSideProps"in Next JS for 1mg PWA application to seamlessly render a server side rendered page.',
+            "Developed a webpack plugin that removes server side code from client build, there by reducing the size of build by 10%.",
+            "Led the initiative to transition from monolithic architecture to mono-repo architecture, leveraging the turborepo tool; optimized CI/CD pipelines, resulting in a 20% reduction in deployment time and improved overall team productivity.",
+            "Lead an agile team of developers, implementing coding standards and conducting regular code reviews, resulting in a 15% reduction in code complexity and improved overall system performance.",
+            "Redesigned company's mobile homepage and product detail page, resulting in a 30% increase in user engagement and a 25% decrease in bounce rate over a 6-month period.",
+            "Streamlined web-view efficiency through the implementation of progressive loading techniques, significantly reducing latency and improving page rendering speed by 30% in regions with limited network coverage.",
+            "Introduced skeletons for web pages to prevent cumulative layout shift (CLS) taking it down to 0.",
+            "Engineered the successful collaboration between cross-functional teams to integrate 1mg with TATA Neu app, driving a staggering increase of 3000 daily orders.",
+            "Analyzed and optimized website performance metrics, resulting in decrease in page load times and a 25% increase in user engagement, driving higher conversion rates and revenue growth.",
+            "Consolidated and maintained technical documentation.",
+            "Wrote test cases for react app using jest in TDD approach.",
+            "Implemented and updated application modules under the direction of Senior Software Developers."
           ],
         },
         {
@@ -182,21 +190,10 @@ const Jobs = () => {
           range: "Feb 2019 - May 2021",
           url: "https://www.thelattice.in/",
           description: [
-            "Creating new web app features, functionality, and capabilities using the Angular 2+ framework.",
-            "Conducting requirements gathering and validation as a part of a collaboration for the high-profile external web app that helps to address the client’s need through important UI/UX parts of the system before the active phase of development begins.",
-            "Integrating with third-party services and external APIs and using complex libraries such as Socket.IO for showing data in real-time as a part of implementation amongst different projects and mitigating code duplicity.",
-            "Profiling, troubleshooting and bug f ixes resulting in system performance and scalability improvements.",
-          ],
-        },
-        {
-          title: "Software Developer Intern",
-          company: "Yajna Ventures",
-          location: "New Delhi",
-          range: "May 2018 - June 2018",
-          url: "https://talentopedia.com/",
-          description: [
-            "As part of the team developed components and UI/UX for their product",
-            "As part of the team developed reusable components, and adoptive responsive interfaces",
+            "Developed new web app features, functionality, and capabilities using the Angular 2+ framework.",
+            "Spearheaded requirements gathering and validation for a game-changing external web app, fine-tuning UI/UX aspects to address client needs; facilitated a seamless transition to development phase, minimizing risks, and achieving optimal project outcomes.",
+            "Implemented seamless integration with multiple third-party services and external APIs, leveraging complex libraries like Socket.IO for real-time data visualization; reduced code duplicity and increased project efficiency by 40%.",
+            "Profiling, troubleshooting and bug fixes resulting in system performance and scalability improvements."
           ],
         },
       ],
